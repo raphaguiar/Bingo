@@ -1,27 +1,16 @@
 body {
-    font-family: 'Hammersmith One', Arial, Helvetica, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+    /* ... (rest of the body styles) */
 }
 
 h1 {
-    font-size:   
- 24px;
-    color: #4a4e69;
-    margin-bottom: 10px;
+    /* ... (rest of the h1 styles) */
 }
 
 .bingo-card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); 
-    grid-gap: 5px;
-    margin: 10px 0;
+    grid-template-columns: repeat(5, 40px);
+    grid-gap: 2px; 
+    margin: 5px 0; 
 }
 
 .bingo-card div {
@@ -30,14 +19,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px; 
+    font-size: 12px;
     font-weight: bold;
-    background-color: #9a8c98;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s;
 }
   
   .bingo-card div:hover {
