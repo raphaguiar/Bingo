@@ -45,6 +45,6 @@ function getNewNum() {
 
 
 function anotherCard() {
-  usedNums.fill(false); // Reseta o array de números usados
-  newCard(); // Gera um novo cartão
+  usedNums.fill(false);
+  newCard();
 }
