@@ -1,9 +1,20 @@
 body {
-    /* ... (rest of the body styles) */
+font-family: 'Hammersmith One', Arial, Helvetica, sans-serif;
+background-color: #f4f4f9;
+color: #333;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+margin: 0;
 }
 
 h1 {
-    /* ... (rest of the h1 styles) */
+font-size:   
+24px; 
+color: #4a4e69;
+margin-bottom: 10px;
 }
 
 .bingo-card {
