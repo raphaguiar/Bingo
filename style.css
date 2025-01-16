@@ -12,7 +12,7 @@ body {
 
 h1 {
     font-size: 36px;
-    color: #4a4e69;
+    color: #589e65;
     margin-bottom: 20px;
 }
 
@@ -31,28 +31,28 @@ h1 {
     justify-content: center;
     font-size: 24px;
     font-weight: bold;
-    background-color: #9a8c98;
+    background-color: #7f8b7c;
     color: white;
     border-radius: 10px; 
-    border: 2px solid #333; 
+    border: 2px solid #5f6d5c; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s;
 }
 
 .bingo-card div:hover {
-    background-color: #c9ada7;
+    background-color: #a7b9a2;
     transform: translateY(-3px);
 }
 
 .bingo-card div:active {
-    background-color: #3d4055;
+    background-color: #718a6c;
     transform: scale(0.95);
 }
 
 #reload {
     font-family: 'Hammersmith One', Arial, Helvetica, sans-serif;
-    background-color: #f28482;
+    background-color: #6a9672;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -65,11 +65,11 @@ h1 {
 }
 
 #reload:hover {
-    background-color: #f97f79;
+    background-color: #589e65;
 }
 
 #reload:active {
-    background-color: #f28482;
+    background-color: #589e65;
     transform: scale(0.98);
 }
 
