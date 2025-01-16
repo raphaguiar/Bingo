@@ -17,34 +17,45 @@ function newCard() {
 }
 
 function setSquare(thisSquare) {
-  var currentSquare = "square" + thisSquare; 
+  var currentSquare = "square" + thisSquare;
 
   var newNum;
   
   do {
-    newNum = getNewNum(); 
+    newNum = getNewNum();
   } while (usedNums[newNum]);
 
-  usedNums[newNum] = true; 
+  usedNums[newNum] = true;
 
   var squareElem = document.getElementById(currentSquare);
-  squareElem.innerHTML = newNum; 
-
-  squareElem.onclick = function () {
-    if (squareElem.style.backgroundColor == 'grey') {
-      squareElem.style.backgroundColor = '';
-    } else {
-      squareElem.style.backgroundColor = 'grey';
-    }
-  };
+  if (squareElem) {
+    squareElem.innerHTML = newNum;
+    squareElem.onclick = function () {
+      if (squareElem.style.backgroundColor == 'grey') {
+        squareElem.style.backgroundColor = '';
+      } else {
+        squareElem.style.backgroundColor = 'grey';
+      }
+      checkBingo(); 
+    };
+  }
 }
 
 function getNewNum() {
   return Math.floor(Math.random() * 60) + 1;
 }
 
-
 function anotherCard() {
   usedNums.fill(false);
   newCard();
+}
+
+function checkBingo() {
+  for (var i = 0; i < 20; i++) {
+    var currentSquare = document.getElementById("square" + i);
+    if (currentSquare.style.backgroundColor !== 'grey') {
+      return; 
+    }
+  }
+  alert("!!! BINGO !!!");
 }
