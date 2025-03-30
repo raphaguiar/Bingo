@@ -10,34 +10,48 @@ body {
     margin: 0;
 }
 
+.neo {
+    text-align: center;
+    width: 80%; 
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
 h1 {
-    font-size: 36px;
+    font-size: 28px; 
     color: #589e65;
     margin-bottom: 20px;
 }
 
 .bingo-card {
     display: grid;
-    grid-template-columns: repeat(5, 100px); 
-    grid-gap: 15px; 
-    margin: 20px 0;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-gap: 15px;
+    margin: 20px auto; 
+    max-width: 500px; 
+    width: 100%;
+    padding: 10px;
 }
 
 .bingo-card div {
-    width: 100px; 
-    height: 100px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 20px; 
     font-weight: bold;
-    background-color: #7f8b7c;
+    background-color: #72916b;
     color: white;
-    border-radius: 10px; 
-    border: 2px solid #5f6d5c; 
+    border-radius: 10px;
+    border: 2px solid #72916b;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s;
+    height: 70px; 
+    max-width: 70px; 
 }
 
 .bingo-card div:hover {
@@ -46,7 +60,32 @@ h1 {
 }
 
 .bingo-card div:active {
-    background-color: #718a6c;
+    background-color: #4c6448;
+    transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+    .bingo-card {
+        grid-template-columns: repeat(5, 1fr); 
+        grid-gap: 10px;
+        padding: 5px; 
+        max-width: 400px; 
+    }
+
+    .bingo-card div {
+        font-size: 16px; 
+        height: 50px; 
+        max-width: 50px; 
+    }
+}
+
+.bingo-card div:hover {
+    background-color: #a7b9a2;
+    transform: translateY(-3px);
+}
+
+.bingo-card div:active {
+    background-color: #4c6448;
     transform: scale(0.95);
 }
 
@@ -62,6 +101,7 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; 
 }
 
 #reload:hover {
